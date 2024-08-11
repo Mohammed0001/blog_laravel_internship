@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 Route::apiResource('posts', PostController::class);
 Route::apiResource('users', UserController::class);
 
-Route::get('/userPosts/{userID}', [PostController::class, 'showUserPosts']);
+Route::get('/userPosts/{userID}', [ PostController::class, 'showUserPosts']);
+
+// Route::get('/users/{user}/posts', [PostController::class, 'showUserPosts']);
 
 
 // Route::get( '/users', [UserController::class, 'index']);
